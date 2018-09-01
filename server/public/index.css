@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: helvetica;
+}
+
+form {
+    display: flex;
+    flex:1;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color:rgb(121, 121, 121);
+    min-height: 30px;
+}
+
+
+.footer {
+    background-color: rgb(121, 121, 121);
+    min-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.content {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+}
+
+.leftbar {
+    flex:1;
+    background-color: lightgrey;
+    padding: 10px;
+    overflow: auto;
+}
+
+.rightbar {
+    padding: 10px;
+    flex: 1;
+    background-color: lightgrey;
+}
+
+.chat {
+    padding: 5px;
+    background-color: darkgrey;
+    flex:6;
+    overflow:auto;
+}
+
+.message {
+    background-color: lightgrey;
+    margin: 2px;
+    font-weight: normal;
+    word-break: break-all;
+}
+
+.username {
+    display: inline-block;
+}
+
+.message-data {
+    display: inline-block;
+    
+}
+
+.user {
+    background-color: darkgrey;
+    text-align: center;
+    margin: 5px;
+}
+
+.entity {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .entity {
+    flex-direction: row;
+}
+
+input {
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+.rightbar input {
+    text-align: center;
+    font-weight: normal;
+}
+
+button {
+    font-size: 14px;
+}  
+
+button {
+    background-color: darkgrey;
+    margin: 5px;
+    padding: 5px;
+    flex: 1;
+    width: 90%;
+    color: white;
+}
+
+button:hover {
+    background-color: #55dbae;
+    cursor: pointer;
+}
