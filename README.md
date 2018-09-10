@@ -27,7 +27,7 @@ Detailed instructions below
 3) Run "npm start" in the 'ChatService/server' directory (port 4000).
 4) Run "npm install" in the 'ChatService/client/chat' directory.
 5) Run "npm start" in the 'ChatService/client/chat' directory.
-6) The application is accessible via browser on localhost:3000.
+6) The application is accessible via browser on localhost:3000 (webpack dev-server).
 
 ## Dependencies
 
