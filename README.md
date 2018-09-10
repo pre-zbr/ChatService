@@ -29,7 +29,7 @@ Detailed instructions below
 5) Run "npm start" in the 'ChatService/client/chat' directory.
 6) The application is accessible via browser on localhost:3000.
 
-### Dependencies
+## Dependencies
 
 Javascript ES6, Node.js 10+, Socket.io, Redis, React 16+
 
