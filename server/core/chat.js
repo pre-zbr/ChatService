@@ -41,17 +41,18 @@ module.exports = class Chat {
         return this.messages;
     }
 
-    setMessages(dataService) {
-        this.messages = dataService.loadData();
-    }
-
-    saveMessage(dataService) {
-        dataService.saveData(message);
-    }
-
     addMessage(newMessage) {
-        this.dataService.saveData(newMessage);
         this.messages.push(newMessage);
+    }
+
+    persistMessage(newMessage) {
+        this.dataService.saveData(newMessage)
+            .then(() => {
+                console.log("message persisted succesfully");
+            })
+            .catch((error) => {
+                console.log(error);
+            })
     }
 
     _getUsers() {
@@ -102,7 +103,9 @@ module.exports = class Chat {
                 this.setUser(action.user, action.property, action.data);
                 break;
             case 'send_message':
-                this.addMessage(new Message(action.user.name, action.user.color, action.data));
+                let newMessage = new Message(action.user.name, action.user.color, action.data);
+                this.addMessage(newMessage);
+                this.persistMessage(newMessage);
                 break;
             case 'disconnect':
                 this.killUser(action.user);

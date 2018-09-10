@@ -8,13 +8,13 @@ module.exports = class RedisService {
     connectToRedisServer() {
         return new Promise((resolve, reject) => {
             this.connection = this.redis.createClient()
-            .on('connect', () => {
-                console.log('Redis client connected');
-                resolve(true);
-            })
-            .on('error', (err) => {
-                reject(err);
-            });   
+                .on('connect', () => {
+                    console.log('Redis client connected');
+                    resolve(true);
+                })
+                .on('error', (err) => {
+                    reject(err);
+                });   
         })
     }
 

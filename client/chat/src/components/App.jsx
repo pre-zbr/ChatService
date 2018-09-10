@@ -16,7 +16,7 @@ class App extends Component {
     this.changeColor = this.changeColor.bind(this);
     this.changeUsername = this.changeUsername.bind(this);
     this.sendMessage = this.sendMessage.bind(this);
-    this.addEventHandler = this.addEventHandler.bind(this);
+    this.addEventHandlers = this.addEventHandlers.bind(this);
 
     this.state = {
       socket: io.connect('http://127.0.0.1:4000'), // should this be in state?
