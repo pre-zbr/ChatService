@@ -1,3 +1,5 @@
+WARNING: this application is not intended for production - xss protection is not developed.
+
 # ChatService
 
 ChatService is a real time webchat application utilizing 
