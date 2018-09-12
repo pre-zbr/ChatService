@@ -1,4 +1,4 @@
-WARNING: this application is not intended for production - xss protection is not developed.
+WARNING: this application is not intended for production - React xss not tested.
 
 # ChatService
 
