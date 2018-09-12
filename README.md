@@ -1,5 +1,3 @@
-WARNING: this application is not intended for production - React xss not tested.
-
 # ChatService
 
 ChatService is a real time webchat application utilizing 
