@@ -24,7 +24,7 @@ Detailed instructions below
 
 1) Start the Redis server on the default port 6379.
 2) Run "npm install" in the 'ChatService/server' directory.
-3) Run "npm start" in the 'ChatService/server' directory (port 4000).
+3) Run "npm start" in the 'ChatService/server' directory (port 3999).
 4) Run "npm install" in the 'ChatService/client/chat' directory.
 5) Run "npm start" in the 'ChatService/client/chat' directory.
 6) The application is accessible via browser on localhost:3000 (webpack dev-server).
