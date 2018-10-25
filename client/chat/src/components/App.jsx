@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   connect() {
-    this.state.socket.connect('http://127.0.0.1:4000'); // synchronous call
+    this.state.socket.connect('http://127.0.0.1:3999'); // synchronous call
   }
 
   disconnect() {
