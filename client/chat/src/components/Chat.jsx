@@ -6,8 +6,8 @@ class Chat extends Component {
 
   render() {
 
-    let messages = this.props.messages.map((msg, key) => 
-      <Message key={key} time={msg.timestamp} color={msg.color} user={msg.userId} message={msg.data}/>
+    let messages = this.props.messages.map((msg, idx) => 
+      <Message key={msg._uid} time={msg.timestamp} color={msg.color} user={msg.userId} message={msg.data}/>
     );
 
     return (
