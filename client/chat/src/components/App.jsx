@@ -19,7 +19,7 @@ class App extends Component {
     this.addEventHandlers = this.addEventHandlers.bind(this);
 
     this.state = {
-      socket: io.connect('http://127.0.0.1:4000'), // should this be in state?
+      socket: io.connect('http://127.0.0.1:3999'), // should this be in state?
       connected: true,
       users: [],
       messages: []
