@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-class Widget extends Component {
+class ButtonWidget extends Component {
 
     constructor(props) {
         super(props);
@@ -17,7 +18,6 @@ class Widget extends Component {
     }
  
     render() {
-
         return (
             <div className="widget">
                 <form >
@@ -27,7 +27,13 @@ class Widget extends Component {
                 </form>
             </div>
         );
-        }
     }
+}
 
-export default Widget;
+ButtonWidget.propTypes = {
+    disconnect: PropTypes.func,
+    connect: PropTypes.func,
+    connected: PropTypes.bool
+};
+
+export default ButtonWidget;

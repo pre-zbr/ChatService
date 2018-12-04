@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Widget extends Component {
 
@@ -19,7 +20,6 @@ class Widget extends Component {
     }
 
     render() {
-
         return  (
                 <div className="widget">
                     <form>
@@ -28,7 +28,12 @@ class Widget extends Component {
                     </form>
                 </div>
             );
-        }
     }
+}
+
+Widget.propTypes = {
+    action: PropTypes.string,
+    actionHandler: PropTypes.func
+};
 
 export default Widget;

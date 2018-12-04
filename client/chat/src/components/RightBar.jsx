@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import Widget from './Widget';
 
@@ -13,5 +14,10 @@ class RightBar extends Component {
     );
   }
 }
+
+RightBar.propTypes = {
+  changeUsername: PropTypes.func,
+  changeColor: PropTypes.func
+};
 
 export default RightBar;

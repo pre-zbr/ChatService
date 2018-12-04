@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import LeftBar from './LeftBar';
 import Chat from './Chat';
 import RightBar from './RightBar';
 
 
-
 class Content extends Component {
 
-  
   render() {
     return (
       <div className="content">
@@ -19,5 +18,10 @@ class Content extends Component {
     );
   }
 }
+
+Content.propTypes = {
+  users: PropTypes.array,
+  messages: PropTypes.array
+};
 
 export default Content;

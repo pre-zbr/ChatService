@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Message extends Component {
 
@@ -15,6 +16,13 @@ class Message extends Component {
     );
   }
 }
+
+Message.propTypes = {
+  user: PropTypes.string,
+  data: PropTypes.string,
+  time: PropTypes.string,
+  color: PropTypes.string,
+};
 
 export default Message;
 

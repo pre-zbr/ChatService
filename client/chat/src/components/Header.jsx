@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import ButtonWidget from './ButtonWidget';
 
@@ -12,5 +13,11 @@ class Header extends Component {
     );
   }
 }
+
+Header.propTypes = {
+  disconnect: PropTypes.func,
+  connect: PropTypes.func,
+  connected: PropTypes.bool
+};
 
 export default Header;
