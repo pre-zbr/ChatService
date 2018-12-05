@@ -4,6 +4,8 @@ ChatService is a real time webchat application utilizing
 the websockets protocol for bidirectional communication and
 Redis for data persistence.
 
+![ChatService](https://github.com/daedalus1948/project_images/blob/master/ChatService.png)
+
 ## Additional Information
 
 Redis needs to be installed and running on the default port.
